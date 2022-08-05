@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+  <head>
+    <meta charset="utf8" />
+    <title>day1_vue</title>
+  </head>
+  <body>
+    <h1>Hello 精弘</h1>
+    <div id="app">
+      <h2>{{department}}</h2>
+      <button @click="handleClick">{{count}}</button>
+    </div>
+  </body>
+  <script>
+    const vm = new Vue({
+      el: "#app",
+      data: {
+        department: "技术部",
+        count: 0,
+      },
+      methods: {
+        handleClick() {
+          this.count++;
+        },
+      },
+      computed: {},
+    });
+  </script>
+</html>
