@@ -8,8 +8,11 @@
   <body>
     <h1>Hello 精弘</h1>
     <div id="app">
-      <h2>{{department}}</h2>
-      <button @click="handleClick">{{count}}</button>
+      <h2>{{department}} RP : {{ count }}</h2>
+      <div v-if="count < 10">rp 太低啦</div>
+      <button @click="handleClick">Click me</button>
+      <h2 :title="`rp: ${doubleRP}`">鼠标移到上面看双倍 RP</h2>
+      <input placeholder="RP 外挂" v-model="count" />
     </div>
   </body>
   <script>
@@ -24,7 +27,11 @@
           this.count++;
         },
       },
-      computed: {},
+      computed: {
+        doubleRP() {
+          return this.count * 2;
+        },
+      },
     });
   </script>
 </html>
