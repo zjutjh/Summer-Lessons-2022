@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  background: #f0f2f5;
+  font-family: BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+}
+
+#app {
+  box-sizing: border-box;
+}
+
+@mixin radius {
+  border-radius: 0.5rem;
+}
+
+@mixin shadow {
+  box-shadow: 0.1em 0.1px 0.1em rgba(0, 0, 0, 0.2);
+}

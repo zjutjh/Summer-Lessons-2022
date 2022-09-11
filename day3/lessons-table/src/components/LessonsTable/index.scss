@@ -1,0 +1,103 @@
+.lessons-table {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  grid-template-rows: 32px 1fr;
+  overflow: scroll;
+  background-color: white;
+  height: 100%
+}
+
+.index-panel {
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+
+  .num-index {
+    text-align: center;
+  }
+}
+
+.weekday-index-panel {
+  left: 2rem;
+  flex-direction: row;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.06);
+  border-left: 1px solid rgb(0, 0, 0, 0.06);
+  width: 100%;
+  height: 2rem;
+}
+
+.jc-index-panel {
+  flex-direction: column;
+  top: 2rem;
+  border-right: 1px solid rgb(0, 0, 0, 0.06);
+  border-top: 1px solid rgb(0, 0, 0, 0.06);
+  width: 2rem;
+}
+
+.class-card-wrapper {
+  position: absolute;
+  padding: 0.5rem 0 0 0.5rem;
+  width: calc(100% / 7);
+  text-align: center;
+  box-sizing: border-box;
+
+  .title {
+    line-height: 100%;
+    font-size: 120%;
+    display: block;
+    font-weight: bolder;
+  }
+
+  .item-content {
+    line-height: 125%;
+    font-size: 100%;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .k-card {
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}
+
+.table {
+  color: white;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.class-card {
+  width: calc(100% - 0.4rem);
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .title {
+    margin-bottom: 0.1rem;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.now-index {
+  border: 1px solid skyblue;
+  width: calc(126% + 2rem);
+  position: absolute;
+  z-index: 10;
+}
+
+.now-week-index {
+  height: 100%;
+  width: calc(18%);
+  background-color: rgba(135, 207, 235, 0.829);
+  position: absolute;
+}
