@@ -1,0 +1,8 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.background": "#12304A",
+    "titleBar.activeBackground": "#194367",
+    "titleBar.activeForeground": "#F6FAFD"
+  },
+  "cSpell.words": ["mapstructure"]
+}
